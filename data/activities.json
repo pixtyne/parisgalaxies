@@ -1,0 +1,47 @@
+[ {
+    "name" : "Toutes les catégories",
+    "alias" : "toutes-les-activites",
+    "icon" : "filter",
+    "activities" : [{
+        "name" : "autres",
+        "alias" : "autres"
+    } ]
+}, {
+    "name" : "Architecture & Monuments",
+    "alias" : "architecture",
+    "icon" : "architecture"
+}, {
+    "name" : "Arts Visuels - Visual Arts",
+    "alias" : "visual-arts",
+    "icon" : "visual-arts"
+}, {
+    "name" : "CINEMA - MOVIE THEATER",
+    "alias" : "cinema",
+    "icon" : "cinema"
+}, {
+    "name" : "SPECTACLE VIVANT - THEATER & DANCE",
+    "alias" : "theater",
+    "icon" : "theater"
+   
+}, {
+    "name" : "CONCERTS & FÊTES - MUSIC & PARTIES",
+    "alias" : "music",
+    "icon" : "music"
+}, {
+    "name" : "FOODING - CREATIVE RETAURANTS",
+    "alias" : "fooding",
+    "icon" : "fooding"
+}, {
+    "name" : "EDUCATION & WORKSHOPS",
+    "alias" : "education",
+    "icon" : "education"
+}, {
+    "name" : "DESIGN & INNOVATION LABS",
+    "alias" : "design",
+    "icon" : "design"
+}, {
+    "name" : "Commerce",
+    "type" : "Commerce",
+    "icon" : "alimentation",
+    "activities" : []
+} ]

@@ -1,0 +1,45 @@
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">
+                            <span itemprop="name"><%= properties.name %></span>
+                        </h3>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="body-inner">
+
+                            <div class="row">
+                                <div class="col-xs-8 col-md-8">
+
+                                    <ul itemprop="address" itemscope
+                                        itemtype="http://schema.org/PostalAddress">
+                                        <li itemprop="legalName"><%= properties.legalName %></li>
+                                        <li itemprop="streetAddress"><%= properties.address %></li>
+                                        <li itemprop="postalCode"><%= properties.postcode %> <span itemprop="addressLocality"><%= properties.city %></span></li>
+                                        <li itemprop="addressRegion">Region</li>
+                                        <li itemprop="addressCountry">France</li>
+                                        <li itemprop="fullAddress"><%= properties.address + ', ' + properties.postcode + ' ' + properties.city %></li>
+                                    </ul>
+
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <a itemprop="url" href="<%= properties.url %>"><%= properties.url %></a>
+                                    <p itemprop="description">
+                                        <%= properties.description %>
+                                    </p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>

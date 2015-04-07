@@ -1,0 +1,91 @@
+.categories() {
+.categories {
+    .cf;
+    .fit(auto, auto, auto, 0);
+    .box-shadow(0px 5px 25px rgba(0,0,0,0.4));
+    background: @blue;
+    border: inherit;
+    padding: 0;
+    z-index: 2;
+    line-height: 1em;
+    
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: visible;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    clear: both;    
+    
+    @icon-size : 24px;
+    .item {
+        color: #3E3E3E !important;
+        cursor: pointer;
+        display: block;
+        clear : both;
+        padding: @icon-size * 0.2 @icon-size * 0.4;
+        &::first-child {
+            border : none;
+        }
+        
+
+        .item-label {
+            color: white !important;
+            
+            .name {
+                line-height: @icon-size;
+                display: block;
+                padding-left: 3em;
+				text-transform: uppercase;
+				font-size: 13px;
+            
+                
+            }
+            .icon {
+                width: @icon-size;
+                height: @icon-size;
+                display: inline-block;
+                float: left;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                -webkit-background-size: contain;
+                background-size: contain;
+                .main-category-icons();
+            }
+            
+            &:hover {
+                .name {
+                    color: @violet-2;
+                }
+            }
+            
+        }
+        &.active {
+            .item-label {
+                .icon {
+                }
+            }
+        }
+    }
+    
+    .level-0 {
+        .item {
+            display: inline-block;
+            font-size: 0.9em;
+            padding: 0;
+            // background-color: #eee;
+            margin-right: 0.5em;
+            padding: 0.25em;
+            border : none;
+            .item-label {
+                .name {
+                    line-height: 1em;
+                    display: inline;
+                }
+            }
+        }
+    }
+    
+}
+}

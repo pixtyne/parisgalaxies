@@ -1,0 +1,56 @@
+.zone-top{
+    .fit(0, 0, auto, 0);
+    height: @zone-top-height;
+    //z-index: 1;
+    padding-left: 10px;
+    padding-top: 5px;
+    background: @blue;
+    
+    .title {
+		background-image: url(../images/logo-mobile.png);
+		background-repeat: no-repeat;
+		background-size: 25px;
+		background-position: 0 3px;
+		color: white;
+		font-size: 1.6em;
+		font-weight: bold;
+		padding-left: 40px;
+		padding-top:10px;
+    }
+    img{
+        margin-top: 0px;
+    }
+    .menu {
+        .fit(10px, 10px, auto, auto);
+	    .menu-toggle{
+	        cursor: pointer;
+	        height: 20px;
+	        width: 20px;
+	        background: url(../images/burger.png);
+	    }
+	    .menu-content {
+	       .fit(100%, 0, auto, auto);
+	       .box-shadow();
+	       background-color: lighten(@blue, 20%);
+	       z-index: 10;
+	       ul {
+               li {
+                   text-align: left;
+                   white-space: nowrap;
+                   a {
+                       margin: 0.2em;
+                       padding: 0.5em 1em;
+                       font-size: 1.1em;
+                       display: block;
+                       color: white;
+                       // text-decoration: underline;
+                       &:hover {
+                           background-color: @blue;
+                           color: white;
+                       }
+                   }
+               }
+           }
+	    }
+    }
+}

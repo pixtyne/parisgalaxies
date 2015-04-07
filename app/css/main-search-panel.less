@@ -1,0 +1,33 @@
+.search-panel {
+    .fit(0px, auto, 0px, 0px);
+    z-index: 1;
+    @import "main-search-box.less";
+    .search-box();
+
+    @import "main-search-results.less";
+   
+    .search-control {
+        .box-shadow();
+        background: lighten(@blue, 15%);
+        padding: 0;
+        margin: 0 1em;
+        height: 36px;
+        .label {
+            display: block;
+            padding: 10px 10px;
+            color: white;
+            font-size: smaller;
+            cursor: pointer;
+        }
+        a.label {
+            text-decoration: underline;
+        }
+        .results-info {
+            float: right;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            padding: 10px 10px;
+        }
+    }
+}

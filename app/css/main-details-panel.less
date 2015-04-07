@@ -1,0 +1,189 @@
+.details-panel {
+	.fit(auto, 20%, 0, auto);
+	.box-shadow(0px 0px 25px rgba(0,0,0,0.4));
+	width: 30%;
+	z-index: 2;
+	
+	.place-info-container{
+	
+	    &.close{
+	        display: none;
+	    }
+	    @padding: 1.2em;
+	    @background-color: @blue;
+	    background-color: @blue;
+	    
+	   .place-info-content{
+             .field {
+                 margin-bottom: 0.2em;
+                 .prefix {
+                    color: lighten(gray, 10%);
+                 }
+                 &.addr {
+                    font-size: 1.1em;
+	                margin-bottom: 0.8em;
+                 }
+                 &.activities {
+                    font-style : italic;
+                 }
+                 &.description {
+                    display: none;
+                    font-size: 1em;
+                    margin-top: 0.5em;
+                    padding-top: 0.5em;
+                    border-top: 1px solid lighten(@background-color, 5%);
+                 }
+                 &.brands {
+                    display: none;
+                    font-size: 1em;
+                    margin-top: 0.5em;
+                    padding-top: 0.5em;
+                 }
+                 
+                 &.hours {
+                    p {
+                        font-size: 0.9em;
+                    }
+                 }
+                 
+                 &.social-networks {
+                 }
+             }
+	    
+	        .place-info-inner{
+	            overflow: auto;
+	        }
+	        .place-info-top{
+	            position: relative;
+	            background: lighten(@blue, 15%);
+	            padding: @padding;
+	            color: #fff;
+	
+	            .image {
+	                margin-right: 15px;
+		            width: 32px;
+		            height: 32px;
+		            display: block;
+		            float: left;
+		            background-position: 50% 50%;
+		            background-repeat: no-repeat;
+		            background-color: transparent;
+		            -webkit-background-size: contain;
+		            background-size: contain;
+	            }
+	
+	            h2{
+	                font-size: 1.2em;
+	                font-weight: bold;
+	                // padding-bottom: 10px;
+	            }
+	            p{ }
+	            .close{
+	               .fit(0, 0, 0, auto);
+	                width: 35px;
+	                background-position: 10% 50%;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+//                    -webkit-background-size: contain;
+//                    background-size: contain;
+                    background-image: url(../images/icones/close.png);
+	                cursor: pointer;
+	            }
+	        }
+	
+	        .place-info-middle{
+	            padding: @padding;
+	            font-size: 1em;
+	            color: white;
+	            line-height: 1.2;
+	            background: @background-color;
+	            
+	            .col {
+	               overflow :hidden; 
+	            }
+	
+	        }
+	
+	        .place-info-text{
+	            display: none;
+	            padding: 0 @padding 0 @padding;
+	            font-size: 1em;
+	            color: #656565;
+	            line-height: 20px;
+	
+	            .thumbs{
+	                font-size: 0;
+	                text-align: center;
+	                img{
+	                    margin-bottom: 0px;
+	                    width: 100%;
+	                   //  max-width: 230px;
+	                }
+	            }
+	        }
+	        .place-info-tag{
+	            display: none;
+	            padding-right: 20px;
+	            padding-left: 20px;
+	            padding-top: 15px;
+	            padding-bottom: 15px;
+	            background: #999999;
+	            color: #fff;
+	            a{
+	                color: #fff;
+	                font-size: 0.8em;
+	            }
+	        }
+	
+	        .place-info-bottom{
+	            height: 36px;
+                padding: 0px;
+                margin: 0px;
+                background: @gray-1;
+                text-decoration: underline;
+                border-top: 1px solid #5d5d5d;
+                color: #656565;
+                cursor: pointer;
+                font-size: smaller;
+	            .focus-on-map {
+	               padding: 10px;
+	               float: right;
+	               cursor: pointer;
+                   text-decoration: underline;
+	            }
+	            .place-info-toggle{
+                   padding: 10px;
+                }
+	        }
+	    }
+	}
+    &.open{
+        //z-index: 5;
+        background-color: white;
+		.place-info-container{
+	        .place-info-content{
+		        .place-info-text,
+		        .place-info-tag{
+		            display: block;
+		        }
+		        .field {
+		            &.description {
+		                display: block;
+		            }
+		            &.brands {
+		              display: block;
+		            }
+		        }
+		
+		        .place-info-toggle{
+		            &.closed{
+		                display: none;
+		            }
+		            &.opened{
+		                display: block;
+		            }
+		        }
+            }
+        }
+    }	
+}

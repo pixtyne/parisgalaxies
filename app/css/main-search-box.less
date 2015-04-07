@@ -1,0 +1,113 @@
+@import "./main-search-categories.less";
+
+.search-box() {
+
+.categories();
+
+.search-box {
+
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+
+    .search-categories {
+        background: white;
+        line-height: 3em;
+        padding-left: 2.5em;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        
+        a.filter {
+            font-size: 13px;
+            color: white;
+        }
+        background-size: 24px;
+        background-color: @blue;
+        &.active {
+            background-color: lighten(@blue, 20%);
+            border: none;
+        }
+        &:hover {
+            background-color: lighten(@blue, 20%);
+        }
+        
+        .main-category-icons();
+        
+    }
+    
+
+    position: relative;
+    padding: 0;
+    
+    .search-input-container {
+        position: relative;
+		background-color: black;
+		border-top: 1px dashed #fff;
+		border-bottom: 1px dashed #fff;
+        .search-input {
+            margin: 0.5em;
+            margin-right: 30px;
+            background-color: white;
+            padding: 0;
+            input {
+                outline: 0;
+                width: 100%;
+                border: none;
+                padding: 0;
+                padding-left: 0.5em;
+                font-size: 1.2em;
+                //border-radius: 7px;
+            }
+        }
+        
+		.icon-loupe {
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			background: url(../images/icon-loupe.png) 50% 50% no-repeat;
+			position: absolute;
+			right: 60px;
+			top: 8px;
+			cursor: pointer;
+		}
+		
+		.icon-reset {
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			background: url(../images/icon-reset.png) 50% 50% no-repeat;
+			position: absolute;
+			right: 40px;
+			top: 8px;
+			cursor: pointer;
+		}
+        
+        .search-clear {
+            .fit(0px, 1px, 0px, auto);
+            width: 30px;
+            background: url(../images/close.png) 50% 50% no-repeat;
+            background-size: 16px;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            
+        }
+        
+    }
+    
+    .btn {
+        .fit(1px, auto, 1px, auto);
+        width: 30px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        &.btn-search {
+            right: 0px;
+            top: 0.8em;
+            bottom: 0.8em;
+            background: url(../images/icones/loupe.png) 50% 50% no-repeat @violet-2;
+            .box-shadow();
+        }
+        
+    }
+}
+}
