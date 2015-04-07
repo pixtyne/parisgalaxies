@@ -1,6 +1,12 @@
 Le code de la carte Paris Galaxies est disponible sous la licence MIT License. La base de données des lieux culturels et créatifs représentés sur la carte est disponible sous la licence Creative Commons BY-SA-NC 4.0.
 
 
+## Licence Creative Commons BY-SA-NC 4.0
+
+Copyright des données (dossiers ```data``` et ```app/images``` :  Raphaële Bidault-Waddington
+
+http://creativecommons.org/licenses/by-nc-sa/4.0/
+
 ## Licence MIT
 
 >Copyright (c) 2015 Ubimix
@@ -23,8 +29,3 @@ Le code de la carte Paris Galaxies est disponible sous la licence MIT License. L
 >OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 >THE SOFTWARE.
 
-## Licence Creative Commons BY-SA-NC 4.0
-
-Copyright Raphaële Bidault-Waddington
-
-http://creativecommons.org/licenses/by-nc-sa/4.0/
