@@ -1,0 +1,17 @@
+{
+    "port" : 9898,
+    "baasbox": {
+        "baseUrl" : "http://localhost:9000",
+        "appCode" : "1234567890"
+    },
+    "db" : {
+        "*" : {
+            "dbname": "parisgalaxies",
+            "user": "postgres",
+            "password": "postgres",
+            "host": "localhost",
+            "port": "5432"
+        }
+        
+    }
+}

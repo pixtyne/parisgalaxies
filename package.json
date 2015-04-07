@@ -1,0 +1,57 @@
+{
+  "name": "paris-galaxies",
+  "version": "0.0.1",
+  "main": "server.js",
+  "description": "",
+  "url": "http://parisgalaxies.net/",
+  "keywords": [
+    "map",
+    "paris",
+    "culture"
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rwadd/parisgalaxies.git"
+  },
+  "contributors": [
+    {
+      "name": "Mikhail Kotelnikov",
+      "email": "mikhail.kotelnikov"
+    }
+  ],
+  "dependencies": {
+    "cookie-parser": "*",
+    "express": "~4.6.0",
+    "underscore": "*",
+    "mosaic-commons": "*",
+    "mosaic-teleport": "*",
+    "mosaic-teleport-server": "*",
+    "superagent": "*",
+    "body-parser": "^1.4.3",
+    "pg.js": "^3.4.2",
+    "generic-pool": "^2.1.1",
+    "amdefine": "^0.1.0",
+    "unidecode": "^0.1.3",
+    "readline": "0.0.3",
+    "csv-parse": "0.0.6",
+    "commander": "^2.3.0",
+    "js-yaml": "^3.2.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "requirejs": "^2.1.15",
+    "grunt": "^0.4.5",
+    "grunt-image-resize": "^0.4.0",
+    "grunt-env": "~0.4.1"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

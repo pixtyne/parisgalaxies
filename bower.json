@@ -1,0 +1,27 @@
+{
+  "name": "cci-preference-commerce",
+  "version": "0.0.1",
+  "dependencies": {
+    "jsx-requirejs-plugin": "~0.3.0",
+    "superagent": "0.20.0",
+    "leaflet": "0.7.3",
+    "leaflet.datalayer": "0.0.3",
+    "mosaic-commons": "0.0.15",
+    "mosaic-core": "0.0.7",
+    "mosaic-teleport": "0.0.20",
+    "react": "0.11.2",
+    "requirejs": "*",
+    "requirejs-text": "*",
+    "underscore": "*",
+    "rbush": "git@github.com:mourner/rbush.git",
+    "page": "~1.3.7",
+    "lunr.js": "~0.5.5",
+    "jquery-cookie" : "*",
+    "less": "*"   
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect": "*",
+    "less": "*"
+  }
+}
